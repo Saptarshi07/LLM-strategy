@@ -31,9 +31,9 @@ def system_prompt(aa,ab,ba,bb,utility_prompt):
     return (
             "You are in an interaction with another agent.\n"
             #YOU MAY USE THE FOLLOWING THREE POSSIBILITIES HERE, for example:
-            #"The interaction lasts 10 rounds.\n"
+            "The interaction lasts 10 rounds.\n"
             #"The interaction lasts at least 10 rounds.\n"
-            "After each round the interaction ends with probability 0.1."
+            #"After each round the interaction ends with probability 0.1."
             "In each round, you have a choice between two options, L or R.\n"
             "The other agent also has a choice between L or R.\n"
             "The two of you will decide without knowing what the other will choose.\n"
