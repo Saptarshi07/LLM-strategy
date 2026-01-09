@@ -14,9 +14,7 @@ temperature=0.0 #BASE TEMPERATURE FOR MODELS THAT NEED TEMPERATURE.
 
 #please modify accordingly for what works for you. 
 modelorder = ["anthropic.claude-sonnet-4-20250514-v1:0",
-              #"google.gemma-3-27b-it",
               "google_genai.gemini-2.5-pro",
-              #"vertex_ai.gemini-2.5-pro",
               "gpt-4o",
               "gpt-5",
               "meta.llama3-3-70b-instruct-v1:0"

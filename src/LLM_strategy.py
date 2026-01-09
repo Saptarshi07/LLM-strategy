@@ -270,4 +270,35 @@ def LLM_move(model,temperature,goal,history,treatment,aa,ab,ba,bb):
         else:
             raise KeyError(f"Unexpected response format: {data}")
         
+    elif "gemini" in model:
+      
+        api_url = "https://chat.dartmouth.edu/api/chat/completions"
+        payload = {
+            "model": model,
+            "messages": [
+                {
+                    "role": "user",
+                    "content": [
+                        {"type": "text", "text": instruction + continuationtext}
+                    ]
+                }
+            ],
+            "generationConfig": {
+                "seed": 42,
+                "max_tokens": 1,
+                "temperature": 0.0
+            }
+        }
+        headers = {
+            "Content-Type": "application/json",
+            "Authorization": "bearer " + api_key,
+        }
+        response = requests.post(api_url, headers=headers, json=payload)
+        data = response.json()
+        reply = data["choices"][0]["message"]["content"][-1]
+        return reply
+        
+        
+    
+        
         
