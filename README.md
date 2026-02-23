@@ -15,9 +15,9 @@ LLM_strategy.py:
 
 LLM_play.py:
 
--This contains all the functions necessary for simulating a real game between two LLMs.
--In line 34-36 you can choose what prompt to precisely use "lasts 10 rounds", "lasts atleast 10 rounds" and the stopping probability treatment
--The game is executed by running actual-play.py, where all games run for 10 rounds (variable number_of_rounds).
+- This contains all the functions necessary for simulating a real game between two LLMs.
+- In line 34-36 you can choose what prompt to precisely use "lasts 10 rounds", "lasts atleast 10 rounds" and the stopping probability treatment
+- The game is executed by running actual-play.py, where all games run for 10 rounds (variable number_of_rounds).
 -
 
 LLM_tools.py:
